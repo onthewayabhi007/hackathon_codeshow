@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- ===== ===== Custom Css ===== ===== -->
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- ===== ===== Remix Font Icons Cdn ===== ===== -->
+    <link rel="stylesheet" href="fonts/remixicon.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+
+<body>
+
+    <!-- Navigation Started -->
+    <!-- ================== Navigationa Bar Started ==================== -->
+
+    <header class="header">
+
+            <a class="logo"><img src="https://i.postimg.cc/j5F7RXMx/logo.png" alt=""></a>
+            <a href="#" class="logo">CODESHOWS</a>
+
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="Profile.html">Profile</a>
+            <a href="blog.html">Blogs</a>
+            <a href="index.html#portfolio">Events</a>
+            <a href="Login.html">Logout</a>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- navbar complete -->
+    <!-- <span class="main_bg"></span> -->
+    <div class="container">
+
+        <!-- user profile -->
+        <section class="userProfile card">
+            <div class="profile">
+                <figure><img src="https://i.postimg.cc/KvXd08t5/avatar.png" alt="profile" width="250px" height="250px"></figure>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="work_skills card">
+
+            <!-- ===== ===== Work Contaienr ===== ===== -->
+            <div class="work">
+                <h1 class="heading">Achievements</h1>
+                <div class="primary">
+                    <h1>Hackathon1</h1>
+                    <p>Lorem, ipsum dolor.<br>Lorem ipsum dolor sit.</p>
+                </div>
+
+                <div class="secondary">
+                    <h1>Hackathon2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eaque!</p>
+                </div>
+            </div>
+
+
+
+            <!-- ===== ===== Skills Contaienr ===== ===== -->
+            <div class="skills">
+                <h1 class="heading">Skills Score</h1>
+                <ul>
+                    <li style="--i:0">Web-Developement</li>
+                    <li style="--i:1">Problem Solving</li>
+                    <!-- <li style="--i:3">Problem Solving</li> -->
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== User Details Sections ===== ===== -->
+        <section class="userDetails card">
+            <div class="userName">
+                <h1 class="name">Abcd Singh</h1>
+                <div class="map">
+                    <i class="ri-map-pin-fill ri"></i>
+                    <span>MNIT JAIPUR</span>
+                </div>
+                <p>WEB DEVELOPER</p>
+            </div>
+
+            <div class="rank">
+                <h1 class="heading">Rankings</h1>
+                <span>Coding Ninjas: 4.1⭐ </span><br>
+                <span>Hacker Earth: 4.5⭐ </span><br>
+                <span>Geeks for Geeks: 4.7⭐ </span><br>
+                <span>Code Forces: 4.2⭐ </span><br>
+                <span>HackerRank: 3.8⭐ </span>
+                <div class="rating">
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate underrate"></i>
+                </div>
+            </div>
+
+            <div class="btns">
+                <ul>
+                    <li class="sendMsg">
+                        <i class="ri-chat-4-fill ri"></i>
+                        <a href="#">Send Message</a>
+                    </li>
+
+                    <li class="sendMsg ">
+                        <i class="ri-check-fill ri"></i>
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li class="sendMsg active">
+                        <i class="ri-check-fill ri"></i>
+                        <a href="#">+Add Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="timeline_about card">
+            <div class="tabs">
+                <ul>
+                    <li class="about active">
+                        <i class="ri-user-3-fill ri"></i>
+                        <span>About</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact_Info">
+                <ul>
+                    <li class="address">
+                        <h1 class="label">Address:</h1>                            laborum facere,
+                            cum itaque aut culpa soluta temporibus
+                            praesentium placeat repudiandae.</span>
+                    </li>
+
+                    <li class="email">
+                        <h1 class="label">E-mail:</h1>
+                        <span class="info">lorem@lorem.com</span>
+                    </li>
+
+                    <li class="site">
+                        <h1 class="label">Site:</h1>
+                        <span class="info">www.lorem ipsum.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="basic_info">
+                <br>
+                <h1 class="heading">Basic Information</h1>
+                <ul>
+                    <li class="birthday">
+                        <h1 class="label">Birthday:</h1>
+                        <span class="info">XX XX XXXX</span>
+                    </li>
+
+                    <li class="sex">
+                        <h1 class="label">Gender:</h1>
+                        <span class="info">XXXX</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        };
+
+        window.onscroll = () => {
+        // remove menu icon
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+
+        }
+    </script>
+</body>
+
+</html>

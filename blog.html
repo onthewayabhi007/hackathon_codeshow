@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation ends here -->
+    <!-- ================== Navigationa Bar Started ==================== -->
+
+    <header class="header">
+        <a class="logo"><img src="https://i.postimg.cc/j5F7RXMx/logo.png" alt=""></a>
+        <a href="#" class="logo">CODESHOWS</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="Profile.html">Profile</a>
+            <a href="blog.html">Blogs</a>
+            <a href="index.html#portfolio">Events</a>
+            <a href="Login.html">Logout</a>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- navbar complete -->
+    <!--================== Navigation Bar completed =======================-->
+    <!-- Navigation bar ends here -->
+    <div class="container">
+        <div class="hero">
+
+        </div>
+        <!--Blog Starts-->
+        <main>
+            <h2>Web Development</h2>
+            <div class="profile-container">
+                <div class="profile">
+                    <div class="img-container">
+                        <a href='https://postimg.cc/WdqWFJN0' target='_blank'><img
+                                src='https://i.postimg.cc/WdqWFJN0/author.jpg' border='0' alt='author' /></a>
+                    </div>
+                    <div class="text">
+                        <h3>Aditya Verma</h3>
+                        <p>April 12,2023</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="" class="btn">Read-More</a>
+                </div>
+            </div>
+            <div class="content">
+                <h4>Introduction</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, suscipit eligendi beatae aut
+                    molestiae dolore rem atque ullam enim aliquam dolorum, reprehenderit velit consectetur tempora at
+                    vel! Sed praesentium ad voluptatem esse! In reprehenderit, officia quia assumenda atque voluptas
+                    iure.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, eum deserunt! Blanditiis
+                    accusantium odit aliquam corrupti laudantium. Commodi fugiat inventore nam reprehenderit odit
+                    praesentium quibusdam quaerat beatae, numquam optio repudiandae id in illo magnam qui ab dolorem eum
+                    natus ipsum?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quos natus ratione non! Dolore,
+                    veritatis. Ab, alias suscipit provident magni laboriosam odio ducimus qui! Sint minima impedit magni
+                    sed dignissimos, excepturi, illo maiores aperiam beatae dolorem ab, quaerat tenetur error.</p>
+
+                <h4>Front-End</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe odio, deleniti ullam necessitatibus
+                    praesentium quis ducimus, porro aspernatur ea inventore beatae numquam quas blanditiis natus aperiam
+                    veritatis, sit exercitationem libero maiores consequuntur officiis esse harum consectetur! Eum error
+                    sit provident?</p>
+
+                <div class="content-image-container">
+
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci doloribus perferendis repellat
+                    dolor voluptate delectus consectetur aut praesentium, qui in voluptatem totam libero tempora
+                    voluptates. Laudantium corrupti doloremque ipsa voluptates sequi ad assumenda architecto voluptas,
+                    quidem expedita nostrum, magni iure.</p>
+
+                <h4>Back-End</h4>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore architecto voluptate illum deleniti
+                    sequi reiciendis nobis dolor. Dolores quis dicta, fugit molestias at vel ullam illo maiores hic cum
+                    aspernatur, sit in iure nulla non eius est aliquam veritatis? Rem.</p>
+
+                <blockquote>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus aliquam aliquid. Reiciendis
+                    illum quia iure architecto asperiores rerum obcaecati voluptates, doloremque ipsam id fuga earum
+                    eius veritatis similique quos voluptate iste ex. Odit, veniam. Rem corporis alias beatae ducimus,
+                    enim voluptatem incidunt nulla aspernatur amet non accusamus maiores vero cumque dolorum! Totam eius
+                    labore perferendis doloremque, necessitatibus molestias exercitationem.
+                </blockquote>
+
+                <h4>The Musts</h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam dolorem, voluptatibus
+                    recusandae ex consequuntur voluptas totam eum, beatae minus unde, amet necessitatibus obcaecati.
+                    Magni molestiae temporibus incidunt placeat iste quo consequatur.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt doloribus dicta, perferendis
+                    numquam aliquid quae explicabo ratione molestiae, amet, beatae consequatur corrupti eum
+                    reprehenderit saepe assumenda soluta? Magnam eos, deserunt impedit accusantium earum dolor rerum
+                    minus, explicabo perspiciatis fugit vero?</p>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="tags">
+        <p>tags</p>
+        <a href="">Web Design</a>
+        <a href="">Blogging</a>
+    </div>
+    <script>
+        // Menu icon
+
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        };
+
+
+        // Scroll sections active
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header nav a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
+                    })
+                }
+            })
+
+            // Sticky Navbar
+            let header = document.querySelector('.header')
+
+            header.classList.toggle('sticky', window.scrollY > 100);
+
+            // remove menu icon
+            menuIcon.classList.remove('bx-x');
+            navbar.classList.remove('active');
+
+        }
+    </script>
+</body>
+
+</html>
